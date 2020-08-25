@@ -1,6 +1,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.idea
+.vscode
+._.DS_Store
 
 # C extensions
 *.so
@@ -28,6 +31,7 @@ MANIFEST
 # Flask stuff:
 instance/
 .webassets-cache
+led_control_server-env
 
 # Environments
 .env
