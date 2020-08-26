@@ -1,9 +1,21 @@
 .panel {
-    padding: 13% 20%;
+    margin: 9% 30%;
 }
 
 .color-grid {
     height: 50px;
     width: 50px;
+    border: none;
+}
+
+.color-custom {
+    margin: 40px 0;
+}
+
+.color-presets {
+    margin: 40px 0;
+}
+
+#colorPicker {
     border: none;
 }
