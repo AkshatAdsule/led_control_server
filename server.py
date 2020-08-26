@@ -1,12 +1,12 @@
-from flask import Flask
-from flask import request
+from flask import Flask, request, render_template
+
 app = Flask(__name__, static_url_path='', 
             static_folder='static',
             template_folder='templates')
 
 @app.route('/')
 def hello_world():
-	return 'Hello, World!'
+	return render_template("index.html")
 
 
 @app.route('/setcolor/rgb', methods=["POST"])

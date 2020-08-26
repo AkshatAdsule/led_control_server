@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LED Control</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>
-        Hello there
-    </h1>
+    <div class="panel">
+        <h1>LED Control Panel</h1>
+        <h2>Set a custom color</h2>
+        <form action="/changeColor/formRGB" class="color-change">
+            <input type="color" name="color" id="colorPicker">
+            <label for="colorPicker">Choose color</label>
+        </form>
+        <h2>Or choose from some presets</h2>
+        <form action="/color" method="post">
+            <input class="color-grid" type="button" style="background-color: #FF0000;">
+            <input class="color-grid" type="button" style="background-color: #FFFF00;">
+            <input class="color-grid" type="button" style="background-color: #0000FF;">
+            <input class="color-grid" type="button" style="background-color: #00FF00;">
+            <br>
+            <input class="color-grid" type="button" style="background-color: #FF00FF;">
+            <input class="color-grid" type="button" style="background-color: #651FFF;">
+            <input class="color-grid" type="button" style="background-color: #007fff;">
+            <input class="color-grid" type="button" style="background-color: #00FFFF;">
+            <br>
+            <input class="color-grid" type="button" style="background-color: #00ff7f;">
+            <input class="color-grid" type="button" style="background-color: #7fff00;">
+            <input class="color-grid" type="button" style="background-color: #FF4500;">
+            <input class="color-grid" type="button" style="background-color: #FFFFFF; border: solid 2px;">
+        </form>
+    </div>
 </body>
 </html>
