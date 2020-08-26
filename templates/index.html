@@ -10,14 +10,16 @@
 <body>
     <div class="panel">
         <h1>LED Control Panel</h1>
-        <h2>Set a custom color</h2>
-        <form action="/changecolor" class="color-change">
-            <input type="color" name="color" id="colorPicker">
-            <label for="colorPicker">Choose color</label>
-            <button class="btn btn-dark" type="submit">Set</button>
-        </form>
-        <h2>Or choose from some presets</h2>
-        <form action="/color" method="post">
+        <div class="color-custom">
+            <h2>Set a custom color</h2>
+            <form action="/changecolor" class="color-change">
+                <input type="color" name="color" id="colorPicker">
+                <label for="colorPicker">Choose color</label>
+                <button class="btn btn-dark" type="submit">Set</button>
+            </form>
+        </div>
+        <div class="color-presets">
+            <h2>Or choose from some presets</h2>
             <a href="/changecolor?color=%23ff0000" class="color-link"><input class="color-grid" type="button" style="background-color: #FF0000;"></a>
             <a href="/changecolor?color=%23FFFF00" class="color-link"><input class="color-grid" type="button" style="background-color: #FFFF00;"></a>
             <a href="/changecolor?color=%230000FF" class="color-link"><input class="color-grid" type="button" style="background-color: #0000FF;"></a>
@@ -32,7 +34,7 @@
             <a href="/changecolor?color=%237fff00" class="color-link"><input class="color-grid" type="button" style="background-color: #7fff00;"></a>
             <a href="/changecolor?color=%23FF4500" class="color-link"><input class="color-grid" type="button" style="background-color: #FF4500;"></a>
             <a href="/changecolor?color=%23FFFFFF" class="color-link"><input class="color-grid" type="button" style="background-color: #FFFFFF; border: solid 2px;"></a>
-        </form>
+        </div>
     </div>
 </body>
 </html>
