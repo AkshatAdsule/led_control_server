@@ -9,7 +9,7 @@ def hello_world():
 	return 'Hello, World!'
 
 
-@app.route('/setcolor', methods=["POST"])
+@app.route('/setcolor/rgb', methods=["POST"])
 def setColor():
 	r = request.args.get("R")
 	g = request.args.get("B")
