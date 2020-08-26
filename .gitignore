@@ -4,6 +4,7 @@ __pycache__/
 .idea
 .vscode
 ._.DS_Store
+.secret
 
 # C extensions
 *.so
