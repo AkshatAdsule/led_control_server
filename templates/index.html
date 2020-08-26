@@ -11,9 +11,10 @@
     <div class="panel">
         <h1>LED Control Panel</h1>
         <h2>Set a custom color</h2>
-        <form action="/changeColor/formRGB" class="color-change">
+        <form action="/changecolor" class="color-change">
             <input type="color" name="color" id="colorPicker">
             <label for="colorPicker">Choose color</label>
+            <button class="btn btn-dark" type="submit">Set</button>
         </form>
         <h2>Or choose from some presets</h2>
         <form action="/color" method="post">
