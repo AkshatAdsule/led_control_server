@@ -14,9 +14,9 @@ def setColor(r,g,b):
 		R.ChangeDutyCycle(int(r/2.55))
 		G.ChangeDutyCycle(int(g/2.55))
 		B.ChangeDutyCycle(int(b/2.55))
-		print("R PWN:", int(r/2.55))
-		print("B PWN:", int(g/2.55))
-		print("B PWN:", int(b/2.55))
+		print("R PWM:", int(r/2.55))
+		print("G PWM:", int(g/2.55))
+		print("B PWM:", int(b/2.55))
 
 app = Flask(__name__, static_url_path='', 
             static_folder='static',
